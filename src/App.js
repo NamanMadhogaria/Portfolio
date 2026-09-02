@@ -111,9 +111,9 @@ function App() {
         </div>
 
         <aside className="profile-panel" aria-label="Profile highlights">
-          <p className="panel-kicker">Current role</p>
+          <p className="panel-kicker">Recent role</p>
           <h2>366Pi Technologies</h2>
-          <p>Software Engineer, Ranchi</p>
+          <p>Software Engineer, Ranchi · Oct 2025 - Aug 2026</p>
           <dl className="stats-grid">
             <div>
               <dt>4</dt>
@@ -139,14 +139,14 @@ function App() {
         <div className="timeline">
           <article className="timeline-item">
             <div>
-              <p className="role-date">Oct 2025 - Present</p>
+              <p className="role-date">Oct 2025 - Aug 2026</p>
               <h3>Software Engineer</h3>
               <p className="muted">366Pi Technologies, Ranchi, India</p>
             </div>
             <p>
-              Develop applications and REST APIs with C#, SQL Server, Entity Framework
-              Core, React, and SPFx. Build Power Automate workflows, gather requirements
-              directly from clients, and support Azure DevOps deployments across Agile
+              Developed applications and REST APIs with C#, SQL Server, Entity Framework
+              Core, React, and SPFx. Built Power Automate workflows, gathered requirements
+              directly from clients, and supported Azure DevOps deployments across Agile
               sprints.
             </p>
           </article>
