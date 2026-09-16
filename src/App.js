@@ -7,11 +7,19 @@ const skills = [
   'REST APIs',
   'Entity Framework Core',
   'React',
+  'Next.js',
+  'JavaScript',
+  'TypeScript',
   'SPFx',
+  'HTML',
+  'CSS',
+  'Responsive UI',
   'SharePoint Online',
   'SQL Server',
   'Power Automate',
+  'Microsoft Azure',
   'Azure DevOps',
+  'CI/CD',
   'Power BI',
   'Python',
   'Pandas',
@@ -24,36 +32,65 @@ const clientWork = [
     visibility: 'Internal client application',
     stack: 'SPFx, React, .NET 8, SQL Server, Power Automate',
     detail:
-      'Built SPFx components and backend APIs for an enterprise safety management solution while resolving production issues directly with clients.',
+      'Built reusable SharePoint Framework and React components for an enterprise safety management solution, integrated APIs and SQL Server features, and resolved production issues directly with clients.',
   },
   {
     name: 'Khelangan',
     visibility: 'Public staging portal',
     url: 'https://khelanganportalfrontendstaging.azurewebsites.net/',
-    stack: 'C#, .NET 8, Entity Framework Core, SQL Server',
+    stack: 'Next.js, React, C#, .NET 8, Entity Framework Core, SQL Server',
     detail:
-      'Developed backend APIs and Entity Framework models for an athlete management platform in collaboration with frontend developers.',
+      'Developed frontend features for an athlete management platform, built C#/.NET REST APIs and Entity Framework models, and worked across UI-to-database flows.',
   },
   {
     name: 'KidCare',
     visibility: 'Internal client application',
-    stack: 'SPFx, ASP.NET Core, SQL Server',
+    stack: 'SPFx, React, ASP.NET Core, SQL Server',
     detail:
-      'Built SharePoint Framework components, backend APIs, and SQL Server enhancements for a business management solution.',
+      'Built SharePoint Framework and React components, integrated ASP.NET Core APIs, and delivered SQL Server enhancements for business management features.',
   },
   {
     name: 'FloCard',
     visibility: 'Public product website',
     url: 'https://flocard.app/',
-    stack: 'ASP.NET Core, SQL Server',
-    detail: 'Contributed to backend development, enhancements, and production support.',
+    stack: 'React, ASP.NET Core, SQL Server',
+    detail:
+      'Contributed to frontend and backend feature development, debugging, application enhancements, release support, and production maintenance.',
   },
 ];
 
 const projects = [
   {
+    title: 'Movie Discovery App',
+    stack: 'TypeScript, React, API Integration, Responsive UI',
+    url: 'https://github.com/NamanMadhogaria/movie-discovery-app',
+    points: [
+      'Built a responsive movie browsing experience focused on searchable content discovery and clean frontend structure.',
+      'Organized reusable TypeScript UI logic for a polished, portfolio-ready frontend application.',
+    ],
+  },
+  {
+    title: 'LLD Practice Platform',
+    stack: 'React, C#, .NET 10 API, Full-Stack Architecture',
+    url: 'https://github.com/NamanMadhogaria/LLD-Practice-Platform',
+    points: [
+      'Created a full-stack practice platform for low-level design submissions, feedback workflows, and attempt history.',
+      'Combined a React frontend with a .NET API to support structured design practice and rubric-based review.',
+    ],
+  },
+  {
+    title: 'GPS-Based Vehicle Tracking System',
+    stack: 'Dart, Location Tracking, Mobile Application',
+    url: 'https://github.com/NamanMadhogaria/GPS-based-vehicle-tracking-system',
+    points: [
+      'Built a GPS-based tracking project focused on vehicle location workflows and mobile application behavior.',
+      'Explored real-time tracking concepts, route visibility, and practical mobile app structure.',
+    ],
+  },
+  {
     title: 'Offshore Customer Data Management System',
     stack: 'SPFx, React, ASP.NET Core, SQL Server, Azure, OpenXML SDK, Power BI',
+    url: 'https://github.com/NamanMadhogaria/ffshore-Customer-Data-Management-System-SPFx-.NET-Azure-Power-BI-',
     points: [
       'Built a SharePoint-to-Azure data management solution with an SPFx interface and ASP.NET Core backend APIs.',
       'Added Excel and Word exports with OpenXML SDK and designed Power BI dashboards for enterprise reporting.',
@@ -94,11 +131,12 @@ function App() {
 
       <section className="hero" id="home">
         <div className="hero-copy">
-          <p className="eyebrow">Software Engineer</p>
+          <p className="eyebrow">Full-Stack Software Engineer</p>
           <h1>Naman Madhogaria</h1>
           <p className="intro">
-            I build enterprise applications, backend APIs, SharePoint solutions, and
-            workflow automations using .NET, React, SPFx, SQL Server, and Azure DevOps.
+            I build responsive web interfaces, reusable frontend components, REST APIs,
+            and data-driven enterprise applications using React, Next.js, .NET, SQL
+            Server, Azure, SharePoint, and Power BI.
           </p>
           <div className="hero-actions">
             <a className="primary-button" href="mailto:nmnmadho@gmail.com">
@@ -113,7 +151,7 @@ function App() {
         <aside className="profile-panel" aria-label="Profile highlights">
           <p className="panel-kicker">Recent role</p>
           <h2>366Pi Technologies</h2>
-          <p>Software Engineer, Ranchi · Oct 2025 - Aug 2026</p>
+          <p>Software Engineer, Ranchi · October 2025 - August 2026</p>
           <dl className="stats-grid">
             <div>
               <dt>4</dt>
@@ -139,15 +177,15 @@ function App() {
         <div className="timeline">
           <article className="timeline-item">
             <div>
-              <p className="role-date">Oct 2025 - Aug 2026</p>
+              <p className="role-date">October 2025 - August 2026</p>
               <h3>Software Engineer</h3>
               <p className="muted">366Pi Technologies, Ranchi, India</p>
             </div>
             <p>
-              Developed applications and REST APIs with C#, SQL Server, Entity Framework
-              Core, React, and SPFx. Built Power Automate workflows, gathered requirements
-              directly from clients, and supported Azure DevOps deployments across Agile
-              sprints.
+              Developed full-stack enterprise applications by building frontend
+              components, integrating REST APIs, implementing database features, and
+              supporting production releases. Worked across React, Next.js, SPFx, C#,
+              .NET 8, ASP.NET Core, SQL Server, Power Automate, Azure, and Azure DevOps.
             </p>
           </article>
           <article className="timeline-item">
@@ -208,6 +246,16 @@ function App() {
               <div>
                 <h3>{project.title}</h3>
                 <p className="stack">{project.stack}</p>
+                {project.url && (
+                  <a
+                    className="project-link"
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View repository
+                  </a>
+                )}
               </div>
               <ul>
                 {project.points.map((point) => (

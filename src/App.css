@@ -344,6 +344,18 @@ h3 {
   margin-top: 10px;
 }
 
+.project-link {
+  color: var(--accent);
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-top: 8px;
+}
+
+.project-link:hover {
+  color: var(--accent-strong);
+}
+
 .skills-section {
   display: grid;
   gap: 36px;
