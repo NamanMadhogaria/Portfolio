@@ -61,6 +61,15 @@ const clientWork = [
 
 const projects = [
   {
+    title: 'Face Emotion Detector',
+    stack: 'Python, OpenCV, TensorFlow, Keras, NumPy, CNN',
+    url: 'https://github.com/NamanMadhogaria/Face-emotion-detecter',
+    points: [
+      'Built a real-time facial emotion detection system that processes webcam or image input and classifies expressions such as happy, sad, angry, surprised, neutral, fear, and disgust.',
+      'Used OpenCV for face detection and a CNN-based TensorFlow/Keras model for emotion classification and prediction visualization.',
+    ],
+  },
+  {
     title: 'Movie Discovery App',
     stack: 'TypeScript, React, API Integration, Responsive UI',
     url: 'https://github.com/NamanMadhogaria/movie-discovery-app',
